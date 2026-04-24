@@ -33,6 +33,12 @@ tokio = { workspace = true, features = ["macros", "rt-multi-thread", "signal"] }
 name = "pixi"
 path = "src/main.rs"
 
+# temporary bin for requirements.txt parsing to avoid people using the wrong binary.
+# TODO: remove this once we have a proper parser for requirements.txt
+[[bin]]
+name = "rpixi"
+path = "src/main.rs"
+
 [dev-dependencies]
 async-trait = { workspace = true }
 chrono = { workspace = true }
